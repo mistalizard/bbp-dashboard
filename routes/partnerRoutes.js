@@ -11,4 +11,10 @@ router
   .get(partnerController.getAllPartners)
   .post(partnerController.addPartner);
 
+router
+  .route('/:id')
+  .get(partnerController.getPartner)
+  .patch(partnerController.updatePartner)
+  .delete(partnerController.deletePartner);
+
 module.exports = router;
