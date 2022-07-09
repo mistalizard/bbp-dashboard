@@ -1,0 +1,26 @@
+{
+  "name": "bbp-dashboard",
+  "version": "1.0.0",
+  "description": "Broadband Partner Agent Dashboard",
+  "main": "app.js",
+  "scripts": {
+    "start": "SET NODE_ENV=development&&nodemon server.js",
+    "start:prod": "SET NODE_ENV=production&&nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistalizard/bbp-dashboard.git"
+  },
+  "author": "Tim Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mistalizard/bbp-dashboard/issues"
+  },
+  "homepage": "https://github.com/mistalizard/bbp-dashboard#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4",
+    "morgan": "^1.10.0"
+  }
+}
