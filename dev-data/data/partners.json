@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Provider 1",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 2",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 3",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 4",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 5",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 6",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 7",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 8",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 9",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 10",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 11",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 12",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 13",
+        "timeZone": "eastern",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 14",
+        "timeZone": "central",
+        "activeOutage": false
+    },
+    {
+        "name": "Provider 15",
+        "timeZone": "central",
+        "activeOutage": false
+    }
+]
