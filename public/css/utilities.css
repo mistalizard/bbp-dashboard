@@ -1,0 +1,30 @@
+.bg-light {
+  background: #222;
+}
+
+.bg-dark {
+  background: #111;
+}
+
+.no-alert {
+  background: linear-gradient(to right, #019f2e, #03c83b);
+}
+
+.alert {
+  background: linear-gradient(to right, #a10000, #ee0101);
+}
+
+.time-good {
+  color: #03b335;
+}
+
+.time-bad {
+  color: #ee0101;
+}
+
+.time-test {
+  color: pink;
+}
+.time-test2 {
+  color: rgb(199, 20, 169);
+}
