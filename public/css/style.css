@@ -71,7 +71,7 @@ p {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   padding: 20px 20px;
   margin-top: 70px;
   width: 95vw;
@@ -87,7 +87,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   transition: all 0.5s;
-  width: 600px;
+  width: 650px;
   height: 30px;
 }
 
@@ -106,8 +106,10 @@ p {
 
   /* margin-right: auto; */
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 2rem;
+  width: 275px;
 }
 
 .card-details {
