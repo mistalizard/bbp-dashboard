@@ -2,76 +2,136 @@
     {
         "name": "Provider 1",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 2",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 3",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 4",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 5",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 6",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 7",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 8",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 9",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 10",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 11",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 12",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 13",
         "timeZone": "eastern",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 14",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     },
     {
         "name": "Provider 15",
         "timeZone": "central",
-        "activeOutage": false
+        "activeOutage": false,
+        "businessHours": {
+            "open": "08:00",
+            "close": "04:30"
+        }
     }
 ]

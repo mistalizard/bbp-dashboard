@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/utilities.css" />
     <title>Dashboard</title>
@@ -18,19 +15,27 @@
         <section class="container">
           <% data.forEach(function(provider){ %>
           <div class="card">
-            <div class="time time-good">8:00 AM</div>
+            <div class="time time-good <%= provider.timeZone %>">
+              <% if (provider.timeZone === 'eastern') { %> <%= time.easternTime%> <%} else if (provider.timeZone === 'central') {%>
+              <%=time.centralTime %> <% } %>
+            </div>
             <div class="provider-name-box">
               <h2 class="provider-name"><%= provider.name %></h2>
             </div>
 
             <div class="card-details">
               <div class="card-detail-box">
-                <span class="card-detail"><p>After Hours</p></span>
+                <!-- Compares office hours with current time and sets appropriate values based on whether or not the current time is within normal business hours. -->
+                <% const isOfficeOpen = checkBusinessHours(provider.timeZone, provider.businessHours.open,provider.businessHours.close) %>
+                <% if (isOfficeOpen) { %>
+                <span class="card-detail time-good"><p>Open</p></span>
+                <% } else {%>
+                <span class="card-detail time-bad"><p>Closed</p></span>
+                <% } %>
               </div>
-
               <div class="card-details">
                 <div class="card-detail-box outage">
-                  <a class="card-detail" href="">No Active Outages</a>
+                  <a class="card-detail" href="">No Active Outage</a>
                 </div>
 
                 <div class="card-detail-box">

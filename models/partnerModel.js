@@ -16,6 +16,22 @@ const partnerSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  businessHours: {
+    open: {
+      type: String,
+      required: [
+        true,
+        'Business hours start time must be specified in this format HH:MM',
+      ],
+    },
+    close: {
+      type: String,
+      required: [
+        true,
+        'Business hours end time must be specified in this format HH:MM',
+      ],
+    },
+  },
 });
 
 const Partner = mongoose.model('Partner', partnerSchema);

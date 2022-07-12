@@ -81,7 +81,6 @@ p {
 .card {
   background: #333;
   border-radius: 2px;
-  box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
   margin: 20px auto;
   transform: skewX(-20deg);
   display: flex;
@@ -97,6 +96,7 @@ p {
   justify-content: center;
   text-align: center;
   font-weight: 300;
+  font-size: 15px;
   padding: 5px;
   transform: skewX(20deg);
 }
@@ -122,6 +122,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-right: 10px;
 }
 
 .card-detail-box:last-child {
@@ -131,11 +132,13 @@ p {
 .card-detail,
 .card-detail a {
   font-weight: 300;
+  font-size: 14px;
   text-decoration: none;
   color: #fff;
   transform: skewX(20deg);
 }
 
 .outage {
-  background: linear-gradient(to right, #019f2e, #03c83b);
+  /* background: linear-gradient(to right, #019f2e, #03c83b); */
+  border: 1px solid #03c83b;
 }
