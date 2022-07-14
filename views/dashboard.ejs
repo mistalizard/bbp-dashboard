@@ -14,8 +14,8 @@
       <div class="dashboard">
         <section class="container">
           <% data.forEach(function(provider){ %>
-          <div class="card">
-            <div class="time time-good <%= provider.timeZone %>">
+          <div class="card warning">
+            <div class="time no-alert <%= provider.timeZone %>">
               <% if (provider.timeZone === 'eastern') { %> <%= time.easternTime%> <%} else if (provider.timeZone === 'central') {%>
               <%=time.centralTime %> <% } %>
             </div>
@@ -28,19 +28,18 @@
                 <!-- Compares office hours with current time and sets appropriate values based on whether or not the current time is within normal business hours. -->
                 <% const isOfficeOpen = checkBusinessHours(provider.timeZone, provider.businessHours.open,provider.businessHours.close) %>
                 <% if (isOfficeOpen) { %>
-                <span class="card-detail time-good"><p>Open</p></span>
+                <span class="card-detail no-alert"><p>Open</p></span>
                 <% } else {%>
-                <span class="card-detail time-bad"><p>Closed</p></span>
+                <span class="card-detail alert"><p>Closed</p></span>
                 <% } %>
               </div>
-              <div class="card-details">
-                <div class="card-detail-box outage">
-                  <a class="card-detail" href="">No Active Outage</a>
-                </div>
 
-                <div class="card-detail-box">
-                  <a class="card-detail" href="">Links</a>
-                </div>
+              <div class="card-detail-box outage">
+                <a class="card-detail" href="">No Active Outage</a>
+              </div>
+
+              <div class="card-detail-box">
+                <a class="card-detail" href="">Links</a>
               </div>
             </div>
           </div>

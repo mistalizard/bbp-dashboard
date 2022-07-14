@@ -138,6 +138,11 @@ p {
   transform: skewX(20deg);
 }
 
+.outage-wrapper {
+  display: flex;
+  background: linear-gradient(to right, #019f2e, #03c83b);
+  margin-right: 10px;
+}
 .outage {
   /* background: linear-gradient(to right, #019f2e, #03c83b); */
   border: 1px solid #03c83b;

@@ -7,10 +7,7 @@ const Partner = require('../../models/partnerModel');
 dotenv.config({ path: './config.env' });
 
 // We need to connect to the DB in this particular file because it will be something that we only run independently of our express application, so it needs its own DB connection.
-const DB = process.env.DATABASE.replace(
-  '<PASSWORD>',
-  process.env.DATABASE_PASSWORD
-);
+const DB = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
 
 mongoose
   .connect(DB, {
@@ -21,9 +18,13 @@ mongoose
 
 // READ JSON FILE
 // Have to use JSON.parse to convert the info into a JS object before we can do anything with it.
-const partners = JSON.parse(
-  fs.readFileSync(`${__dirname}/partners.json`, 'utf-8')
-);
+// TEST DATA
+const partners = JSON.parse(fs.readFileSync(`${__dirname}/partners.json`, 'utf-8'));
+
+// PROVIDER DATA
+// const partners = JSON.parse(
+//   fs.readFileSync(`${__dirname}/partners-named.json`, 'utf-8')
+// );
 
 // IMPORT DATA INTO DATABASE
 const importData = async () => {

@@ -6,19 +6,19 @@
   background: #111;
 }
 
-.no-alert {
+.no-alert-gradient {
   background: linear-gradient(to right, #019f2e, #03c83b);
 }
 
-.alert {
+.alert-gradient {
   background: linear-gradient(to right, #a10000, #ee0101);
 }
 
-.time-good {
+.no-alert {
   color: #03c83b;
 }
 
-.time-bad {
+.alert {
   color: #ff6868;
 }
 

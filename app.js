@@ -4,8 +4,6 @@ const morgan = require('morgan');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
-const toObject = require('dayjs/plugin/toObject');
-dayjs.extend(toObject);
 
 dayjs.extend(utc); // Required for timezone plugin
 dayjs.extend(timezone); // Allows us to specify the timezone for the time request.

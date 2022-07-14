@@ -2,8 +2,6 @@ const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
-// const toObject = require('dayjs/plugin/toObject');
-// dayjs.extend(toObject);
 
 dayjs.extend(utc); // Required for timezone plugin
 dayjs.extend(timezone); // Allows us to specify the timezone for the time request.
@@ -28,7 +26,7 @@ module.exports = function () {
 
     // Creates an object containing the current time based on the timezone, then passes it to the getCurrentTime function in order to convert it into a format we can compare to startOfBusiness and endOfBusiness.
     if (timezone === 'eastern') {
-      const currentTimeObj = dayjs().tz('America/New_York').set('hour', 14);
+      const currentTimeObj = dayjs().tz('America/New_York');
       const currentTime = getCurrentTime(currentTimeObj.$H, currentTimeObj.$m);
 
       // If within business hours
