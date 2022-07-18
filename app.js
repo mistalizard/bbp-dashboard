@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
+const http = require('http');
 const morgan = require('morgan');
+const socketio = require('socket.io');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
@@ -15,6 +17,8 @@ const partnerRouter = require('./routes/partnerRoutes');
 const Partner = require('./models/partnerModel');
 
 const app = express();
+const server = http.createServer(app);
+const io = socketio(server);
 
 // PUBLIC DIRECTORY
 app.use(express.static(path.join(__dirname, '/public')));
@@ -30,6 +34,10 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(express.json());
+
+io.on('connection', () => {
+  console.log('User Connected');
+});
 
 app.get('/', async (req, res) => {
   try {
@@ -59,4 +67,4 @@ app.get('/outages', (req, res) => {
   res.send('Outage Page');
 });
 
-module.exports = app;
+module.exports = server;

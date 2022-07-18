@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 const app = require('./app');
+const server = require('./app');
 
 dotenv.config({ path: './config.env' });
 
@@ -15,6 +16,6 @@ mongoose
   .then(() => console.log('Database connection successfull'));
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Server is live on port ${port}...`);
 });
