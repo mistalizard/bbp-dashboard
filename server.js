@@ -2,7 +2,12 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 const app = require('./app');
-const server = require('./app');
+const http = require('http');
+const server = http.createServer(app);
+const socketio = require('socket.io');
+const io = socketio(server);
+const getIO = require('./io').getIO;
+getIO(io);
 
 dotenv.config({ path: './config.env' });
 

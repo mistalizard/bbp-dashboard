@@ -6,15 +6,8 @@ const partnerController = require('../controllers/partnerController');
 const router = express.Router();
 
 // Router root = /api/v1/partners
-router
-  .route('/')
-  .get(partnerController.getAllPartners)
-  .post(partnerController.addPartner);
+router.route('/').get(partnerController.getAllPartners).post(partnerController.addPartner);
 
-router
-  .route('/:id')
-  .get(partnerController.getPartner)
-  .patch(partnerController.updatePartner)
-  .delete(partnerController.deletePartner);
+router.route('/:id').get(partnerController.getPartner).patch(partnerController.updatePartner).delete(partnerController.deletePartner);
 
 module.exports = router;

@@ -1,4 +1,5 @@
 const Partner = require('../models/partnerModel');
+const messageEmiter = require('./../io');
 
 // Get All Partners
 exports.getAllPartners = async (req, res) => {
@@ -67,6 +68,14 @@ exports.updatePartner = async (req, res) => {
     });
     console.log('Params: ', req.params.id);
     console.log('Body: ', req.body);
+
+    // TESTING///////////////////////////
+    if (req.body.activeOutage === true) {
+      console.log('Active Outage');
+    } else {
+      console.log('No Active Outage');
+    }
+    //////////////////////////////////////
 
     res.status(200).json({
       status: 'success',

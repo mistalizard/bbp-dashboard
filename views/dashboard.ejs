@@ -35,7 +35,11 @@
               </div>
 
               <div class="card-detail-box outage">
+                <% if(provider.activeOutage){ %>
+                <a class="card-detail" href="">Active Outage</a>
+                <% } else { %>
                 <a class="card-detail" href="">No Active Outage</a>
+                <% } %>
               </div>
 
               <div class="card-detail-box">
